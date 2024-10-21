@@ -1,0 +1,80 @@
+Prefix pipelines/LSC/
+#Plugin FASTAEven inputfile data_path/SR.fa outputfile temp/SR.seq
+#Plugin SortWithTemp inputfile parameters/parameters.sorttemp.txt outputfile temp/SR_sorted.seq
+#Plugin UniqueCount inputfile temp/SR_sorted.seq outputfile temp/SR_uniq.seq
+#Plugin Uniq2FASTA inputfile temp/SR_uniq.seq outputfile temp/SR_uniq.fa
+#Plugin FileDump inputfile Dump/dump1.txt outputfile none
+#Plugin SplitByLineCount inputfile parameters/parameters.linecount.txt outputfile temp/SR.fa.
+#Plugin RemoveBothTails inputfile parameters/parameters.removetails.txt outputfile temp/Notwotails_LR.fa
+#Plugin FASTA2FA inputfile temp/Notwotails_LR.fa outputfile temp/LR.fa
+#Plugin NFilter inputfile parameters/parameters.compress.long.txt outputfile temp/LR.fa.
+#Plugin Bowtie2Build inputfile bowtiefiles.long.txt outputfile temp/LR.fa.cps
+
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AA/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AB/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AC/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AD/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AE/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AF/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AG/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AH/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AI/SR.fa
+#Plugin Copy inputfile temp/SR.fa.aa outputfile AJ/SR.fa
+
+#Kitty AA
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AB
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AC
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AD
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AE
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AF
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AG
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AH
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AI
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty AJ
+#Pipeline pipelines/LSC/config.short.txt
+#Kitty .
+
+#Plugin BigCat inputfile Cat/cps.txt outputfile temp/SR.fa.cps
+#Plugin BigCat inputfile Cat/idx.txt outputfile temp/SR.fa.idx
+#Plugin BigCat inputfile Cat/sam.txt outputfile temp/SR.fa.cps.sam
+#Plugin BigCat inputfile Cat/nav.txt outputfile temp/SR.fa.cps.nav
+
+#Plugin MapLongShort inputfile parameters/parameters.maplongshort.txt outputfile temp/LR_SR
+#Plugin SplitByLineCount inputfile parameters/parameters.linecount.long.txt outputfile temp/LR_SR.map.
+#Plugin Copy inputfile temp/LR_SR.map.aa outputfile MapAA/LR_SR.map
+#Plugin Copy inputfile temp/LR_SR.map.ab outputfile MapAB/LR_SR.map
+#Plugin Copy inputfile temp/LR_SR.map.ac outputfile MapAC/LR_SR.map
+#Plugin Copy inputfile temp/LR_SR.map.ad outputfile MapAD/LR_SR.map
+#Plugin Copy inputfile temp/LR_SR.map.ae outputfile MapAE/LR_SR.map
+#Plugin Copy inputfile temp/LR_SR.map.af outputfile MapAF/LR_SR.map
+#Plugin Copy inputfile temp/LR_SR.map.ag outputfile MapAG/LR_SR.map
+
+#Kitty MapAA
+#Pipeline pipelines/LSC/config.long.txt
+#Kitty MapAB
+#Pipeline pipelines/LSC/config.long.txt
+#Kitty MapAC
+#Pipeline pipelines/LSC/config.long.txt
+#Kitty MapAD
+#Pipeline pipelines/LSC/config.long.txt
+#Kitty MapAE
+#Pipeline pipelines/LSC/config.long.txt
+#Kitty MapAF
+#Pipeline pipelines/LSC/config.long.txt
+#Kitty MapAG
+#Pipeline pipelines/LSC/config.long.txt
+
+
+Plugin BigCat inputfile Cat/full.txt outputfile output/full_LR.fa
+Plugin BigCat inputfile Cat/corrected.txt outputfile output/corrected_LR.fa
+Plugin BigCat inputfile Cat/correctFQ.txt outputfile output/corrected_LR.fq
+Plugin BigCat inputfile Cat/uncorrected.txt outputfile output/uncorrected_LR.fa

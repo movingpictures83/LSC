@@ -1,0 +1,3 @@
+#Plugin NFilter inputfile ../parameters/parameters.compress.short.txt outputfile SR.fa.
+Plugin Bowtie2 inputfile ../parameters/parameters.bowtie2.txt outputfile SR.fa.cps
+Plugin SAMParser inputfile ../parameters/parameters.samparser.txt outputfile SR.fa.cps.samParser.log

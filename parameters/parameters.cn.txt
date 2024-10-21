@@ -1,0 +1,2 @@
+LR_SR_mapping_filename	LR_SR.map
+LR_readname_filename	../temp/LR.fa.readname

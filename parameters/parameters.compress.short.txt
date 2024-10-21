@@ -1,0 +1,4 @@
+MinNonN	39
+MaxN	1
+filetype	fa
+inseq_filename	SR.fa

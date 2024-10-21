@@ -1,0 +1,7 @@
+MapAA/corrected_LR_SR.map
+MapAB/corrected_LR_SR.map
+MapAC/corrected_LR_SR.map
+MapAD/corrected_LR_SR.map
+MapAE/corrected_LR_SR.map
+MapAF/corrected_LR_SR.map
+MapAG/corrected_LR_SR.map

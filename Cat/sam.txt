@@ -1,0 +1,10 @@
+AA/SR.fa.cps.sam
+AB/SR.fa.cps.sam
+AC/SR.fa.cps.sam
+AD/SR.fa.cps.sam
+AE/SR.fa.cps.sam
+AF/SR.fa.cps.sam
+AG/SR.fa.cps.sam
+AH/SR.fa.cps.sam
+AI/SR.fa.cps.sam
+AJ/SR.fa.cps.sam

@@ -1,0 +1,6 @@
+temp_foldername	temp/
+nav_filename	temp/SR.fa.cps.nav
+LR_filename	temp/LR.fa
+SR_cvrg_threshold	20
+Nthread	10
+sort_max_mem	-1

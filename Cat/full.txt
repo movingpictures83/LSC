@@ -1,0 +1,7 @@
+MapAA/full_LR_SR.map
+MapAB/full_LR_SR.map
+MapAC/full_LR_SR.map
+MapAD/full_LR_SR.map
+MapAE/full_LR_SR.map
+MapAF/full_LR_SR.map
+MapAG/full_LR_SR.map

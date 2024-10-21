@@ -1,0 +1,12 @@
+endtoend	True
+all	True
+filetype	FASTA
+seedsubstr	15
+maxpenalty	1,1
+nonpenalty	1
+readgapopen	0,1
+refgapopen	0,1
+scoremin	L,0,-0.08
+nounal	True
+db ../temp/LR.fa.cps
+sequences	SR.fa.cps

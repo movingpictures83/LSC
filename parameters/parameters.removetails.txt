@@ -1,0 +1,2 @@
+filetype	fa
+subfilename	data_path/LR.fa

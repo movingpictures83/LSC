@@ -1,0 +1,2 @@
+linecount	192916
+infile	temp/SR_uniq.fa

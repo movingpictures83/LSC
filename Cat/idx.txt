@@ -1,0 +1,10 @@
+AA/SR.fa.idx
+AB/SR.fa.idx
+AC/SR.fa.idx
+AD/SR.fa.idx
+AE/SR.fa.idx
+AF/SR.fa.idx
+AG/SR.fa.idx
+AH/SR.fa.idx
+AI/SR.fa.idx
+AJ/SR.fa.idx

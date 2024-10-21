@@ -1,0 +1,2 @@
+linecount	2843
+infile	temp/LR_SR.map

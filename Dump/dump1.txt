@@ -1,0 +1,3 @@
+temp/SR_uniq.seq
+temp/SR_sorted.seq
+temp/SR.seq

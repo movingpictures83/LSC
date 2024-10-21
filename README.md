@@ -1,2 +1,4 @@
-# LSC
-Improving PacBio Long Read Accuracy by Short Read Alignment (Au et al, 2012)
+LSC
+===
+
+LSC is a long read error correction tool.  It offers fast correction with high sensitivity  and good accuracy. 
